@@ -2,7 +2,6 @@ from django.db import models
 from django.template.defaultfilters import slugify
 from django.contrib.auth.models import User
 
-
 class Category(models.Model):
     NAME_MAX_LENGTH = 128
 
@@ -20,7 +19,6 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
-
 
 class Page(models.Model):
     TITLE_MAX_LENGTH = 128
